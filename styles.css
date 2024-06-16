@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -11,12 +13,34 @@ header, .hero {
     background-color: #24053E;
 }
 
-.navigation {
+nav {
    display: flex;
    justify-content: space-between;
-   padding: 32px 20px;
+   align-items: center;
+   margin: 0 auto;
+   padding: 32px 40px;
+   max-width: 1200px;
 }
 
-h1 [
+h1 {
     color: #fff;
-]
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.hero__img {
+    width: 25%;
+}
