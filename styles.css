@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Manrope', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 nav {
@@ -18,14 +18,14 @@ nav {
    justify-content: space-between;
    align-items: center;
    margin: 0 auto;
-   padding: 32px 40px;
+   padding: 2rem 2.5rem;
    max-width: 1200px;
 }
 
 h1 {
     color: #fff;
     font-family: "Fraunces", serif;
-    font-size: 80px;
+    font-size: 5rem;
     text-align: center;
     max-width: 635px;
     margin: 0 auto 36px;
@@ -47,6 +47,11 @@ a {
     text-decoration-color: #44FFA1;
 }
 
+li a:hover {
+    color: #44FFA1;
+
+}
+
 span {
     text-decoration: underline;
     text-decoration-color: #44FFA1;
@@ -55,9 +60,8 @@ span {
 .hero {
     display: flex;
     flex-direction: column;
-    height: 60vh;  
+    height: 70vh;  
     position: relative;
-    max-width: 100vw;
 }
 
 .bg_img_1 {
@@ -102,13 +106,21 @@ span {
 .btn {
     background-color: #44FFA1;
     color: #24053E;
-    padding: 16px 32px;
-    margin-bottom: 50px;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #24053E;
+    color: #44FFA1;
+    border: 1px solid #44FFA1;
 }
 
 .hero__img {
-    width: 50%;
-    max-width: 765px;
+    width: 80%;
+    max-width: 40rem;
+    margin-top: 2rem;
 }
 
 .features__container {
@@ -155,7 +167,7 @@ span {
     position: absolute;
     content: '';
     width: 75%;
-    height: 50%;
+    height: 45%;
     background-color: #FCF8FF;
     border-radius: 50%;
     left: 0;
@@ -227,3 +239,11 @@ footer {
    padding: 0 16px;
 }
 
+@media (max-width 768px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+    .features__container {
+        flex-direction: column;
+    }
+}
