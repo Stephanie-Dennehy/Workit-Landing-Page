@@ -249,6 +249,7 @@ footer {
 @media screen and (max-width: 768px) {
     body {
         font-size: 1rem;
+        overflow-x: hidden;
     }
     nav {
         padding: 2rem .5rem;
